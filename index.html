@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>freeCodeCamp Survey Form</title>
+    </head>
+
+    <body>
+        <header  class="header">
+            <h1 id="title">Foodie Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help us know more about food</em></p>
+        </header>
+        
+        <div  class="container">
+
+            <form id="survey-form">
+
+                <div  class="form-items">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                
+                <div  class="form-items">
+                    <label id="email-label" for="email">Email </label>
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div  class="form-items">
+                    <label id="number-label" for="number">Age</label>
+                    <input id="number" type="number" min="10" max="120" placeholder="Enter your age" required>
+                </div>
+                
+                <div  class="form-items">
+                    <p id="question">Which option best describes your current role?</p>
+                    <select id="dropdown" name="role">
+                        <option value=""></option>
+                        <option value="foodie">Foodie</option>
+                        <option value="eatsForTaste">One who eats for taste</option>
+                        <option value="eatsToLive">One who eats to live</option>
+                        <option value="prefersWhenHungry">Prefers food only when hungry</option>
+                    </select>
+                </div>
+                    
+                
+                <div  class="form-items">
+                    <p id="question">Would you eat unlimited food if it's provided for $10 without sharing?</p>
+                    <label><input type="radio" name="preference" value="definitely"  class="input-radio" checked>Definitely</label>
+                    <label><input type="radio" name="preference" value="maybe"  class="input-radio"> Maybe</label>
+                    <label><input type="radio" name="preference" value="not-sure"  class="input-radio"> Not sure</label>
+                </div>
+                
+                <div  class="form-items">
+                    <p id="question">When do you eat a lot? </p>
+                    <select id="time" name="time">
+                        <option disabled selected value=""></option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="eveningSnack">Evening snack</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                </div>
+                
+                <div  class="form-items">
+                    <p id="question">What would you like to eat for all time? (Check all that apply)</p>
+                    <label><input type="checkbox" name="prefer" value="pizza"  class="input-checkbox">Pizza</label>
+                    <label><input type="checkbox" name="prefer" value="burger" class="input-checkbox">Burger</label>
+                    <label><input type="checkbox" name="prefer" value="hotDog" class="input-checkbox">Hot Dog</label>
+                    <label><input type="checkbox" name="prefer" value="applePie" class="input-checkbox">Apple Pie</label>
+                    <label><input type="checkbox" name="prefer" value="frenchFries" class="input-checkbox">French Fries</label>
+                    <label><input type="checkbox" name="prefer" value="macAndCheese" class="input-checkbox">Mac and Cheese</label>
+                    <label><input type="checkbox" name="prefer" value="friedChicken" class="input-checkbox">Fried Chicken</label>
+                    <label><input type="checkbox" name="prefer" value="grilledCheese" class="input-checkbox">Grilled Cheese</label>
+                    <label><input type="checkbox" name="prefer" value="iceCream" class="input-checkbox">Ice Cream</label>
+                    <label><input type="checkbox" name="prefer" value="donuts" class="input-checkbox">Donuts</label>
+                    <label><input type="checkbox" name="prefer" value="steak" class="input-checkbox">Steak</label>
+                </div>
+                
+                <div  class="form-items">
+                    <p id="question">Are you a foodie? If yes, give us some tips to become one.</p>
+                    <textarea name="suggestions" id="suggestions" cols="30" rows="6" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div  class="form-items">
+                    <button type="submit" id="submit"  class="submit-button">Submit</button>
+                </div>
+                
+            </form>
+
+        </div>
+        
+
+    </body>
+</html>
